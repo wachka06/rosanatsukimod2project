@@ -1,0 +1,13 @@
+Story Show Page
+<hr>
+<hr>
+Title: "<%= @story.title %>", by <%@story.writers.each do |w| %>
+<h1><%= w.pen_name %></h1>
+<% end%>
+
+<br>
+ <%= "#{@story.beginning} #{@story.development} #{@story.twist} #{@story.conclusion}" %> 
+<br>
+<p> The End.　終　</p>
+<%= link_to 'Edit Story', edit_story_path(@story) %>
+<%= link_to 'See All Stories', stories_path %>
