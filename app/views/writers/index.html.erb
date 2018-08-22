@@ -1,0 +1,12 @@
+<h2>All WRITERS</h2>
+
+<ul>
+<% @writers.each do |writer| %>
+<li>
+<%= link_to writer.pen_name, writer_path(writer) %>
+</li>
+<br>
+<% end %>
+</ul>
+
+<%= link_to 'Create A New Writer!', new_writer_path %>

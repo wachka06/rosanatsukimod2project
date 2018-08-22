@@ -1,0 +1,14 @@
+Writer Show Page
+<hr>
+<hr>
+Name: <%= @writer.pen_name %>
+<br>
+Language Written In: <% @writer.languages.each do |language| %>
+<p><%= language.name %></p>
+<% end %>
+Stories: <% @writer.stories.each do |story| %>
+<p><%= story.title %></p>
+<% end %>
+<br>
+<%= link_to 'Edit Writer', edit_writer_path(@writer) %>
+<%= link_to 'See All Writers', writers_path %>
