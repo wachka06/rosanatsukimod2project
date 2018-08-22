@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: natsuki_rosa_website_production
+  channel_prefix: rosanatsukimod2project_production
